@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hitanshi | MCA Student Portfolio</title>
+  <meta name="description" content="Portfolio of Hitanshi, an MCA student passionate about building modern web experiences." />
+  <meta name="theme-color" content="#0B1020" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">Hitanshi<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="btn-nav">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-title reveal"><span class="grad">Hitanshi</span></h1>
+      <p class="hero-sub reveal">
+        MCA Student &amp; <span id="typed" class="typed"></span><span class="cursor">|</span>
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-img reveal-left">
+        <div class="img-frame">
+          <img src="https://picsum.photos/seed/hitanshi-portrait/600/700" alt="Portrait placeholder" loading="lazy" />
+        </div>
+      </div>
+      <div class="about-text reveal-right">
+        <h2 class="section-title">About <span class="grad">Me</span></h2>
+        <p>
+          I'm a Master of Computer Applications student who loves turning ideas into clean, fast and
+          beautiful software. I enjoy exploring full-stack development, problem solving and the creative
+          side of the web.
+        </p>
+        <p>
+          When I'm not coding, I'm learning new technologies, contributing to side projects and
+          sharpening my fundamentals in data structures, databases and software engineering.
+        </p>
+        <div class="stats">
+          <div class="stat"><b data-count="12">0</b><small>Projects</small></div>
+          <div class="stat"><b data-count="8">0</b><small>Technologies</small></div>
+          <div class="stat"><b data-count="3">0</b><small>Certifications</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section alt" id="skills">
+    <div class="container">
+      <h2 class="section-title center reveal">My <span class="grad">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-level="90">
+          <h3>HTML &amp; CSS</h3>
+          <div class="bar"><i></i></div><span>90%</span>
+        </div>
+        <div class="skill-card reveal" data-level="85">
+          <h3>JavaScript</h3>
+          <div class="bar"><i></i></div><span>85%</span>
+        </div>
+        <div class="skill-card reveal" data-level="80">
+          <h3>Python</h3>
+          <div class="bar"><i></i></div><span>80%</span>
+        </div>
+        <div class="skill-card reveal" data-level="75">
+          <h3>Java</h3>
+          <div class="bar"><i></i></div><span>75%</span>
+        </div>
+        <div class="skill-card reveal" data-level="78">
+          <h3>SQL &amp; Databases</h3>
+          <div class="bar"><i></i></div><span>78%</span>
+        </div>
+        <div class="skill-card reveal" data-level="70">
+          <h3>React</h3>
+          <div class="bar"><i></i></div><span>70%</span>
+        </div>
+      </div>
+      <div class="chips reveal">
+        <span>Git</span><span>GitHub</span><span>Node.js</span><span>MongoDB</span>
+        <span>REST APIs</span><span>Three.js</span><span>Figma</span><span>DSA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title center reveal">Featured <span class="grad">Projects</span></h2>
+      <div class="projects-grid">
+        <article class="project reveal">
+          <div class="p-img"><img src="https://picsum.photos/seed/project-one/800/500" alt="Project one preview" loading="lazy" /></div>
+          <div class="p-body">
+            <h3>Smart Task Manager</h3>
+            <p>A productivity app with drag-and-drop boards, reminders and a clean dashboard.</p>
+            <div class="tags"><span>JavaScript</span><span>Node.js</span><span>MongoDB</span></div>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="p-img"><img src="https://picsum.photos/seed/project-two/800/500" alt="Project two preview" loading="lazy" /></div>
+          <div class="p-body">
+            <h3>Campus Connect</h3>
+            <p>A student community platform for events, notes sharing and mentorship.</p>
+            <div class="tags"><span>React</span><span>Express</span><span>SQL</span></div>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="p-img"><img src="https://picsum.photos/seed/project-three/800/500" alt="Project three preview" loading="lazy" /></div>
+          <div class="p-body">
+            <h3>Weather Insights</h3>
+            <p>Real-time weather visualizer with charts, forecasts and location search.</p>
+            <div class="tags"><span>API</span><span>Chart.js</span><span>CSS</span></div>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="p-img"><img src="https://picsum.photos/seed/project-four/800/500" alt="Project four preview" loading="lazy" /></div>
+          <div class="p-body">
+            <h3>Library Management</h3>
+            <p>Desktop-grade system for catalogue, issue/return tracking and reports.</p>
+            <div class="tags"><span>Java</span><span>MySQL</span><span>Swing</span></div>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="p-img"><img src="https://picsum.photos/seed/project-five/800/500" alt="Project five preview" loading="lazy" /></div>
+          <div class="p-body">
+            <h3>3D Particle Playground</h3>
+            <p>Interactive Three.js experiments with particles, shaders and mouse physics.</p>
+            <div class="tags"><span>Three.js</span><span>WebGL</span><span>JS</span></div>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="p-img"><img src="https://picsum.photos/seed/project-six/800/500" alt="Project six preview" loading="lazy" /></div>
+          <div class="p-body">
+            <h3>Expense Tracker</h3>
+            <p>Personal finance tool with categories, monthly insights and CSV export.</p>
+            <div class="tags"><span>Python</span><span>Flask</span><span>SQLite</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="section alt" id="journey">
+    <div class="container">
+      <h2 class="section-title center reveal">My <span class="grad">Journey</span></h2>
+      <div class="timeline">
+        <div class="t-item reveal-left">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <small>2024 - Present</small>
+            <h3>Master of Computer Applications</h3>
+            <p>Focusing on advanced programming, cloud computing, AI fundamentals and software engineering.</p>
+          </div>
+        </div>
+        <div class="t-item reveal-right">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <small>2021 - 2024</small>
+            <h3>Bachelor's in Computer Applications</h3>
+            <p>Built a strong base in programming, databases, networking and web development.</p>
+          </div>
+        </div>
+        <div class="t-item reveal-left">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <small>Ongoing</small>
+            <h3>Self-Learning &amp; Open Source</h3>
+            <p>Exploring modern web tooling, building side projects and sharing code on GitHub.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-wrap">
+      <h2 class="section-title center reveal">Let's <span class="grad">Connect</span></h2>
+      <p class="center reveal contact-lead">Have an opportunity, project or just want to say hi? My inbox is always open.</p>
+      <div class="contact-card reveal">
+        <a class="btn btn-primary" href="mailto:hitanshi00007@gmail.com">hitanshi00007@gmail.com</a>
+        <div class="socials">
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:hitanshi00007@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Hitanshi. Crafted with HTML, CSS, JS &amp; Three.js.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
